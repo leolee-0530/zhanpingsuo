@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="展评所：发现展览、记录真实观展体验、和同好一起看展。" />
+  <title>展评所｜展览版豆瓣</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="展评所首页">
+      <span class="brand-mark">展</span><span>展评所</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="#home" data-route="home">首页</a>
+      <a href="#discover" data-route="discover">找展</a>
+      <a href="#groups" data-route="groups">组团看展</a>
+      <a href="#profile" data-route="profile">我的</a>
+    </nav>
+    <button class="search-trigger" id="searchTrigger" aria-label="搜索展览">⌕ <span>搜索</span></button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <nav class="mobile-nav" aria-label="移动端主导航">
+    <a href="#home" data-route="home"><span>⌂</span>首页</a>
+    <a href="#discover" data-route="discover"><span>⌕</span>找展</a>
+    <a href="#groups" data-route="groups"><span>◎</span>组团</a>
+    <a href="#profile" data-route="profile"><span>○</span>我的</a>
+  </nav>
+
+  <dialog id="modal" class="modal"><div id="modalContent"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
